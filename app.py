@@ -1,6 +1,12 @@
 from flask import Flask, render_template, request, jsonify
 from pathlib import Path
 import json
+import os
+import google.generativeai as genai
+
+genai.configure(api_key=os.environ.get("GEMINI_API_KEY"))
+model = genai.GenerativeModel("gemini-pro")
+
 
 app = Flask(__name__)
 
@@ -8,6 +14,23 @@ app = Flask(__name__)
 DATA_PATH = Path(__file__).parent / "medicine.json"
 with open(DATA_PATH, "r", encoding="utf-8") as f:
   MEDICINES = json.load(f)
+
+def ai_explain_medicine(med_name, lang):
+    prompt = f"""
+    You are a medical information assistant.
+
+    Explain what "{med_name}" is generally used for.
+    Do NOT give dosage.
+    Do NOT give medical advice.
+    Keep it simple.
+    End with: "Consult a doctor or pharmacist before use."
+
+    Language: {lang}
+    """
+
+    response = model.generate_content(prompt)
+    return response.text
+
 
 
 def search_medicines(query_text: str):
@@ -44,7 +67,21 @@ def generate_ai_style_text(med, lang_code):
     lang_data = med.get(lang_code, med["en"])
     base_desc = lang_data["description"]
     # You could modify this text a bit if you want, but keep it safe.
+
     return base_desc
+def find_medicine(search_text):
+    search_text = search_text.lower().strip()
+
+    for med in MEDICINES:
+        # check key
+        if search_text == med.get("key", "").lower():
+            return med
+
+        # check English name
+        if search_text in med["en"]["name"].lower():
+            return med
+
+    return None
 
 
 @app.route("/")
@@ -56,32 +93,30 @@ def home():
 def get_medicine():
     search = request.args.get("q", "").strip()
     lang = request.args.get("lang", "en")
-    use_ai = request.args.get("ai", "0") in ("1", "true", "yes")
 
     if not search:
-        return jsonify({"error": "No query"}), 400
+        return jsonify({"error": "No search query"}), 400
 
-    matches = search_medicines(search)
-    if not matches:
-        return jsonify({"error": "Medicine not found"}), 404
+    med = find_medicine(search)
 
-    items = []
-    for med in matches:
-        lang_data = med.get(lang, med["en"])
-        description = (
-            generate_ai_style_text(med, lang)
-            if use_ai
-            else lang_data["description"]
-        )
-
-        items.append({
-            "name": lang_data["name"],
-            "description": description,
-            "price": med["price"],
-            "uses": med.get("uses", [])
+    # ✅ STEP 6 STARTS HERE
+    # If medicine NOT found → use AI
+    if not med:
+        ai_text = ai_explain_medicine(search, lang)
+        return jsonify({
+            "name": search,
+            "description": ai_text,
+            "source": "ai"
         })
 
-    return jsonify({"items": items})
+    # If medicine found → use database
+    lang_data = med.get(lang, med["en"])
+    return jsonify({
+        "name": lang_data["name"],
+        "description": lang_data["description"],
+        "price": med["price"],
+        "source": "database"
+    })
 
 
 if __name__ == "__main__":
