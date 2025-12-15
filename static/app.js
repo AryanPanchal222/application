@@ -63,3 +63,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+if (data.source === "ai") {
+  resultDiv.innerHTML += `
+    <p style="color:red;">
+      ⚠ AI-generated information (general reference only)
+    </p>
+  `;
+}
