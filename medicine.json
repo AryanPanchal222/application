@@ -1,0 +1,291 @@
+[
+  {
+    "key": "paracetamol",
+    "price": 50,
+    "uses": ["fever", "mild pain", "headache"],
+    "en": {
+      "name": "Paracetamol 500mg",
+      "description": "Commonly used to reduce fever and relieve mild to moderate pain such as headache or body ache."
+    },
+    "hi": {
+      "name": "पैरासिटामोल 500mg",
+      "description": "आमतौर पर बुखार कम करने और सिरदर्द या शरीर के हल्के से मध्यम दर्द को राहत देने के लिए उपयोग होती है।"
+    },
+    "gu": {
+      "name": "પેરાસીટામોલ 500mg",
+      "description": "સામાન્ય રીતે તાવ ઘટાડવા અને માથાના કે શરીરના હળવા થી મધ્યમ દુખાવામાં રાહત માટે વપરાય છે."
+    }
+  },
+  {
+    "key": "dolo",
+    "price": 30,
+    "uses": ["fever", "body pain"],
+    "en": {
+      "name": "Dolo 650",
+      "description": "A paracetamol-based medicine commonly used for fever and body pain."
+    },
+    "hi": {
+      "name": "डोलो 650",
+      "description": "पैरासिटामोल आधारित दवा, जो आमतौर पर बुखार और शरीर के दर्द के लिए उपयोग होती है।"
+    },
+    "gu": {
+      "name": "ડોલો 650",
+      "description": "પેરાસીટામોલ આધારિત દવા, જે સામાન્ય રીતે તાવ અને શરીરના દુખાવા માટે વપરાય છે."
+    }
+  },
+  {
+    "key": "ibuprofen",
+    "price": 40,
+    "uses": ["pain", "inflammation", "fever"],
+    "en": {
+      "name": "Ibuprofen 400mg",
+      "description": "Pain reliever and anti-inflammatory medicine used for toothache, muscle pain, and fever, only as advised by a doctor."
+    },
+    "hi": {
+      "name": "आइबुप्रोफेन 400mg",
+      "description": "दर्द और सूजन को कम करने वाली दवा, जो दांत दर्द, मांसपेशियों के दर्द और बुखार जैसी स्थितियों में डॉक्टर की सलाह से उपयोग होती है।"
+    },
+    "gu": {
+      "name": "આઇબુપ્રોફેન 400mg",
+      "description": "દુખાવો અને સોજો ઘટાડતી દવા, જે દાંતના દુખાવા, માંસપેશીના દુખાવા અને તાવ જેવી સ્થિતિમાં ડૉક્ટરની સલાહથી વપરાય છે."
+    }
+  },
+  {
+    "key": "cetirizine",
+    "price": 25,
+    "uses": ["allergy", "sneezing", "runny nose"],
+    "en": {
+      "name": "Cetirizine 10mg",
+      "description": "Antiallergy tablet used to relieve sneezing, runny nose, and itchy or watery eyes."
+    },
+    "hi": {
+      "name": "सेटिरिज़ीन 10mg",
+      "description": "एलर्जी की दवा, जो छींक, नाक बहना और आँखों में खुजली या पानी जैसे लक्षणों में राहत देने के लिए उपयोग होती है।"
+    },
+    "gu": {
+      "name": "સિટિરિઝિન 10mg",
+      "description": "એલર્જીની દવા, જે છીંક, નાકમાંથી પાણી વહેવું અને આંખોમાં ખુજલી અથવા પાણી જેવી લક્ષણોમાં રાહત આપે છે."
+    }
+  },
+  {
+    "key": "ors",
+    "price": 20,
+    "uses": ["dehydration", "diarrhoea"],
+    "en": {
+      "name": "ORS Powder Sachet",
+      "description": "Oral rehydration salts used to replace fluids and salts lost due to loose motions or dehydration."
+    },
+    "hi": {
+      "name": "ओआरएस पाउडर सैशे",
+      "description": "मौखिक पुनर्जलीकरण लवण, जो दस्त या डिहाइड्रेशन के कारण खोए हुए तरल और नमक की भरपाई के लिए उपयोग होते हैं।"
+    },
+    "gu": {
+      "name": "ORS પાઉડર સેચે",
+      "description": "મૌખિક રિહાઇડ્રેશન સોલ્ટ, જે પાતળા સ્ત્રાવ અથવા ડિહાઇડ્રેશનને કારણે ગુમાયેલા પ્રવાહી અને મીઠું પૂરી કરવા માટે વપરાય છે."
+    }
+  },
+  {
+    "key": "pantoprazole",
+    "price": 60,
+    "uses": ["acidity", "heartburn"],
+    "en": {
+      "name": "Pantoprazole 40mg",
+      "description": "Used to reduce excess stomach acid and relieve symptoms like acidity and heartburn."
+    },
+    "hi": {
+      "name": "पैंटोप्राज़ोल 40mg",
+      "description": "अधिक पेट के अम्ल को कम करने और एसिडिटी तथा सीने में जलन जैसे लक्षणों से राहत देने के लिए उपयोग होती है।"
+    },
+    "gu": {
+      "name": "પેન્ટોપ્રાઝોલ 40mg",
+      "description": "પેટમાં વધારાનો એસિડ ઘટાડવા અને એસિડિટી તથા છાતીમાં જળસા જેવા લક્ષણોમાં રાહત આપવા માટે વપરાય છે."
+    }
+  },
+  {
+    "key": "domperidone",
+    "price": 35,
+    "uses": ["nausea", "vomiting"],
+    "en": {
+      "name": "Domperidone 10mg",
+      "description": "Used to relieve nausea and vomiting in certain conditions, strictly under medical advice."
+    },
+    "hi": {
+      "name": "डोमपेरिडोन 10mg",
+      "description": "कुछ स्थितियों में मतली और उल्टी से राहत देने के लिए डॉक्टर की सलाह पर उपयोग की जाने वाली दवा।"
+    },
+    "gu": {
+      "name": "ડોમ્પેરિડોન 10mg",
+      "description": "ઉલ્ટી અને ચક્કર જેવી તકલીફોમાં ડૉક્ટરની સલાહ મુજબ રાહત આપવા માટે વપરાતી દવા."
+    }
+  },
+  {
+    "key": "amoxicillin",
+    "price": 90,
+    "uses": ["bacterial infection"],
+    "en": {
+      "name": "Amoxicillin 500mg",
+      "description": "An antibiotic used for certain bacterial infections only when prescribed by a doctor."
+    },
+    "hi": {
+      "name": "एमोक्सीसिलिन 500mg",
+      "description": "कुछ बैक्टीरियल संक्रमणों के लिए डॉक्टर द्वारा बताई गई एंटीबायोटिक दवा।"
+    },
+    "gu": {
+      "name": "એમોક્સિસિલિન 500mg",
+      "description": "કેટલાક બેક્ટેરિયલ ચેપ માટે ડૉક્ટર દ્વારા નિર્દેશિત એન્ટીબાયોટિક દવા."
+    }
+  },
+  {
+    "key": "azithromycin",
+    "price": 120,
+    "uses": ["infection", "throat infection", "chest infection"],
+    "en": {
+      "name": "Azithromycin 250mg",
+      "description": "Antibiotic used for throat, chest, and some other infections only on medical advice."
+    },
+    "hi": {
+      "name": "एज़िथ्रोमाइसिन 250mg",
+      "description": "गले, सीने और कुछ अन्य संक्रमणों के लिए डॉक्टर की सलाह पर उपयोग होती है।"
+    },
+    "gu": {
+      "name": "એઝિથ્રોમાયસિન 250mg",
+      "description": "ગળા, છાતી અને કેટલાક અન્ય ચેપ માટે ડૉક્ટરની સલાહ મુજબ વપરાય છે."
+    }
+  },
+  {
+    "key": "montelukast",
+    "price": 140,
+    "uses": ["allergy", "breathing issues"],
+    "en": {
+      "name": "Montelukast 10mg",
+      "description": "Used as part of allergy or breathing-related treatment when prescribed by a doctor."
+    },
+    "hi": {
+      "name": "मॉन्टेल्यूकास्ट 10mg",
+      "description": "एलर्जी या सांस से जुड़ी समस्याओं के इलाज के हिस्से के रूप में डॉक्टर द्वारा बताई गई दवा।"
+    },
+    "gu": {
+      "name": "મોન્ટેલુકાસ્ટ 10mg",
+      "description": "એલર્જી અથવા શ્વાસ સંબંધિત તકલીફોના ઈલાજના ભાગરૂપે ડૉક્ટરની સલાહ પરથી વપરાતી દવા."
+    }
+  },
+  {
+    "key": "fexofenadine",
+    "price": 80,
+    "uses": ["allergy", "sneezing"],
+    "en": {
+      "name": "Fexofenadine 120mg",
+      "description": "An antihistamine used to relieve allergy symptoms like sneezing or itching."
+    },
+    "hi": {
+      "name": "फेक्सोफेनाडिन 120mg",
+      "description": "एलर्जी के लक्षण जैसे छींक और खुजली में राहत देने वाली एंटीहिस्टामिन दवा।"
+    },
+    "gu": {
+      "name": "ફેક્સોફેનાડિન 120mg",
+      "description": "એલર્જીના લક્ષણો જેમ કે છીંક અને ખુજલીમાં રાહત આપતી એન્ટિહિસ્ટામિન દવા."
+    }
+  },
+  {
+    "key": "metformin",
+    "price": 50,
+    "uses": ["blood sugar"],
+    "en": {
+      "name": "Metformin 500mg",
+      "description": "Used in blood sugar management strictly under doctor guidance."
+    },
+    "hi": {
+      "name": "मेटफॉर्मिन 500mg",
+      "description": "ब्लड शुगर प्रबंधन के लिए केवल डॉक्टर की सलाह पर उपयोग होती है।"
+    },
+    "gu": {
+      "name": "મેટફોર્મિન 500mg",
+      "description": "બ્લડ શુગર સંભાળ માટે માત્ર ડૉક્ટરની સલાહ હેઠળ વપરાય છે."
+    }
+  },
+  {
+    "key": "atenolol",
+    "price": 40,
+    "uses": ["blood pressure", "heart"],
+    "en": {
+      "name": "Atenolol 50mg",
+      "description": "Used for heart or blood pressure-related conditions only on a doctor’s prescription."
+    },
+    "hi": {
+      "name": "एटेनोलोल 50mg",
+      "description": "हृदय या ब्लड प्रेशर से जुड़ी स्थितियों के लिए केवल डॉक्टर की सलाह पर उपयोग होती है।"
+    },
+    "gu": {
+      "name": "એટેનોલોલ 50mg",
+      "description": "હૃદય અથવા બ્લડ પ્રેશર સંબંધિત પરિસ્થિતિઓ માટે માત્ર ડૉક્ટરની સલાહથી વપરાય છે."
+    }
+  },
+  {
+    "key": "calpol",
+    "price": 35,
+    "uses": ["fever", "pain"],
+    "en": {
+      "name": "Calpol 500mg",
+      "description": "A paracetamol-based medicine used for fever and mild pain relief."
+    },
+    "hi": {
+      "name": "कैलपोल 500mg",
+      "description": "पैरासिटामोल आधारित दवा, जो बुखार और हल्के दर्द में उपयोग होती है।"
+    },
+    "gu": {
+      "name": "કેલપોલ 500mg",
+      "description": "પેરાસીટામોલ આધારિત દવા, જે તાવ અને હળવા દુખાવામાં વપરાય છે."
+    }
+  },
+  {
+    "key": "buscopan",
+    "price": 75,
+    "uses": ["stomach cramps"],
+    "en": {
+      "name": "Buscopan",
+      "description": "Used to relieve stomach cramps when advised by a medical professional."
+    },
+    "hi": {
+      "name": "बुस्कोपैन",
+      "description": "पेट में ऐंठन से राहत देने के लिए डॉक्टर की सलाह पर उपयोग होती है।"
+    },
+    "gu": {
+      "name": "બસ્કોપેન",
+      "description": "પેટની પેશીઓની એંઠણમાં રાહત આપવા માટે ડૉક્ટરની સલાહ પર વપરાય છે."
+    }
+  },
+  {
+    "key": "cyclopam",
+    "price": 65,
+    "uses": ["abdominal pain", "cramps"],
+    "en": {
+      "name": "Cyclopam",
+      "description": "Used for stomach cramps or abdominal discomfort, on medical advice."
+    },
+    "hi": {
+      "name": "साइक्लोपैम",
+      "description": "पेट में ऐंठन या असहजता में डॉक्टर की सलाह से उपयोग होती है।"
+    },
+    "gu": {
+      "name": "સાયક્લોપેમ",
+      "description": "પેટની એંઠણ અથવા અસહજતા માટે ડૉક્ટરનાં માર્ગદર્શન હેઠળ વપરાય છે."
+    }
+  },
+  {
+    "key": "zincovit",
+    "price": 90,
+    "uses": ["vitamin deficiency", "weakness"],
+    "en": {
+      "name": "Zincovit",
+      "description": "A multivitamin supplement used to support overall nutritional needs."
+    },
+    "hi": {
+      "name": "जिन्कोविट",
+      "description": "एक मल्टीविटामिन सप्लिमेंट, जो पोषण पूर्ति के लिए उपयोग होता है।"
+    },
+    "gu": {
+      "name": "ઝિન્કોવિટ",
+      "description": "મલ્ટિવિટામિન પૂરક, જે પૌષ્ટિક જરૂરિયાતોને સમર્થન આપે છે."
+    }
+  }
+]
